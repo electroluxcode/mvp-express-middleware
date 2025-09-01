@@ -1,0 +1,45 @@
+{
+  "name": "kk-adapt-app1",
+  "version": "0.0.8",
+  "description": "A simple NextJS app with Plate",
+  "type": "module",
+  "module": "./dist/es/kk-adapt-export.js",
+  "types": "./dist/es/kk-adapt-export.d.ts",
+  "files": [
+    "dist",
+    "package.json"
+  ],
+  "scripts": {
+    "start": "next dev --port 4900",
+    "dev": "vite --host",
+    "build": "NODE_OPTIONS='--max-old-space-size=8192' vite build",
+    "build:memory": "NODE_OPTIONS='--max-old-space-size=16384' vite build"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "dependencies": {
+    "@vitejs/plugin-react": "^4.2.1",
+    "tailwind-merge": "3.3.1",
+    "tailwind-scrollbar-hide": "4.0.0",
+    "tailwindcss": "4.1.8"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "4.1.8",
+    "kk-adapt-app": "^0.0.13",
+    "react": "19.1.0",
+    "react-dom": "19.1.0",
+    "vite": "^5.2.0",
+    "vite-plugin-dts": "^3.9.0",
+    "vite-plugin-imp": "^2.4.0"
+  }
+}

@@ -1,0 +1,6 @@
+.next
+.contentlayer
+.content-collections
+.source
+tsconfig.tsbuildinfo
+node_modules
