@@ -17,11 +17,7 @@ appWrong.use(express.static(path.join(__dirname, "dist")))
 // ========================================
 const appCorrect = express()
 
-appCorrect.use(express.static(path.join(__dirname, "dist"), {
-  maxAge: '1d',
-  etag: true,
-  lastModified: true
-}))
+appCorrect.use(express.static(path.join(__dirname, "dist")))
 appCorrect.use(history({ index: "/index.html" }))
 appCorrect.use(express.static(path.join(__dirname, "dist")))
 
